@@ -1,4 +1,3 @@
-# ansible-projects
 # Ansible Setup and Basic Usage
 
 This README provides a guide to set up Ansible and perform basic tasks.
