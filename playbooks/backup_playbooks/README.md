@@ -18,9 +18,9 @@ Before running this playbook, ensure you have the following prerequisites:
 
 To run the playbook, use the following command:
 
-```bash
+```
 ansible-playbook -i inventory playbook.yml
-
+```
 1 Playbook Description
 The playbook performs the following tasks:
 
