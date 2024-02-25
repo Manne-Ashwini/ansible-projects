@@ -1,0 +1,12 @@
+---
+- name: Update Packages and Reboot
+  hosts: all
+  become: true
+  tasks:
+    - name: Update packages
+      apt:
+        upgrade: yes
+
+    - name: Reboot if required
+      reboot:
+      when: ansible_reboot_required
