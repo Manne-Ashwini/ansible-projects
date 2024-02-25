@@ -1,0 +1,12 @@
+---
+- name: Backup Configuration Files
+  hosts: all
+  become: true
+  tasks:
+    - name: Create backup directory
+      file:
+        path: /var/backups/config
+        state: directory
+
+    - name: Backup configuration files
+      command: tar czf /var/backups/config/{{ inventory_hostname }}_config_backup.tar.gz /etc/config_files
